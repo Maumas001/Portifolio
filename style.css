@@ -1,147 +1,108 @@
-/*
- * Tema: Dark (Harmonizado)
- * Paleta Primária:
- * - Fundo Principal: Cinza Metálico Escuro (#121212)
- * - Texto Principal: Cinza Claro Suave (#E0E0E0)
- * - Destaque (Accent): Ciano-Azul Marinho (#16799C)
- */
 body {
-    /* Define a família da fonte padrão*/
     font-family: 'Open Sans', 'Roboto', 'Lato', Arial, sans-serif;
-    /* Cor de fundo principal: Cinza Metálico Escuro (mais escuro e neutro) */
     background-color: #121212;
-    /* Cor de texto padrão: Cinza Claro Suave */
     color: #E0E0E0;
-    /* Adiciona padding à esquerda para compensar a barra lateral fixa (w-64 = 256px) */
     padding-left: 256px;
 }
 
-/* Media Query: Estilos aplicados em telas de até 768px (móvel/tablet) */
 @media (max-width: 768px) {
     body {
         padding-left: 0;
     }
 }
 
-/* Estilo para o fundo da seção "Início" */
 .hero-bg {
-    /* Gradiente sutilmente mais claro para dar profundidade na imagem */
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('fundo.jpg');
-    /* Garante que a imagem cubra toda a área */
     background-size: cover;
-    /* Centraliza a imagem de fundo */
     background-position: center;
 }
 
-/* Define a cor de fundo para a classe customizada 'primary-dark' (preto neutro) */
 .bg-primary-dark {
     background-color: #000000;
 }
 
-/* Define a cor de fundo no hover para a classe customizada 'primary-red-dark' (Ciano-Azul Marinho) */
 .hover\:bg-primary-red-dark:hover {
     background-color: #16799C;
 }
 
-/* Define a cor de texto para a classe customizada 'primary-red' (Ciano-Azul Marinho) */
 .text-primary-red {
     color: #16799C;
 }
 
-/* Define a cor de texto no hover para a classe customizada 'primary-red' */
 .hover\:text-primary-red:hover {
     color: #16799C;
 }
 
-/* Define a cor de texto no hover para a classe customizada 'secondary-red' (Ciano-Azul Marinho) */
 .hover\:text-secondary-red:hover {
     color: #16799C;
 }
 
-/* Define a cor de fundo para a classe customizada 'light-red' (Cinza Escuro de Elemento/Sidebar) */
 .bg-light-red {
-    background-color: #1E1E1E; /* Um nível acima do fundo principal */
+    background-color: #1E1E1E; 
 }
 
-/* Define a cor de texto para a classe customizada 'dark-text' (Cinza Claro Suave) */
 .text-dark-text {
     color: #E0E0E0;
 }
 
-/* Define a cor de fundo para a classe customizada 'dark-bg' (Ciano-Azul Marinho) */
 .bg-dark-bg {
     background-color: #16799C;
 }
 
-/* Define a cor de texto para a classe customizada 'black-text' (Preto) */
 .text-black-text {
     color: #000000;
 }
 
-/* Define a cor de fundo para a classe customizada 'gray-background' (Cinza de Fundo de Conteúdo) */
 .bg-gray-background {
-    background-color: #1E1E1E; /* Mesmo que light-red, para harmonia */
+    background-color: #1E1E1E; 
 }
 
-/* Define a cor da borda para a classe customizada 'primary-red' (Ciano-Azul Marinho) */
 .border-primary-red {
     border-color: #16799C;
 }
 
-/* Garante que a classe md:hidden (ocultar em telas maiores) funcione corretamente */
 .md\:hidden {
     display: none;
 }
 
-/* Estilos básicos para campos de formulário */
 input,
 textarea {
-    /* Fundo de campo sutilmente mais claro que o fundo do corpo */
     background-color: #242424; 
-    /* Texto de campo claro */
     color: #E0E0E0;
-    /* Borda neutra/escura */
     border-color: #383838;
     font-family: 'Open Sans', 'Roboto', 'Lato', Arial, sans-serif;
 }
 
-/* Estilos aplicados quando o campo está focado */
 input:focus,
 textarea:focus {
-    /* Remove o outline padrão */
     outline: none;
-    /* Cor da borda no foco (Ciano-Azul Marinho) */
     border-color: #16799C;
-    /* Sombra de foco sutil */
     box-shadow: 0 0 0 2px #16799C4D;
 }
 
-/* Reforço de classes Tailwind com !important (ajustadas para o tema escuro) */
 .bg-white {
-    background-color: #000000 !important; /* Preto puro para contraste máximo */
+    background-color: #000000 !important; 
 }
 
 .text-gray-700 {
-    color: #E0E0E0 !important; /* Texto principal */
+    color: #E0E0E0 !important; 
 }
-
 .text-gray-600 {
-    color: #A0A0A0 !important; /* Texto secundário/Placeholder */
+    color: #A0A0A0 !important; 
 }
 
 .text-gray-300 {
-    color: #555555 !important; /* Elementos desabilitados ou muito sutis */
+    color: #555555 !important; 
 }
 
 .bg-gray-100 {
-    background-color: #1E1E1E !important; /* Fundo de Elemento */
+    background-color: #1E1E1E !important; 
 }
 
 .bg-gray-200 {
-    background-color: #242424 !important; /* Fundo de Cards/Containers */
+    background-color: #242424 !important; 
 }
 
-/* Redefine as sombras para usar uma cor escura e sutil */
 .shadow-md,
 .shadow-lg,
 .shadow-sm,
@@ -150,31 +111,18 @@ textarea:focus {
 }
 
 .border-white {
-    /* Borda sutil para separar elementos */
     border-color: #383838 !important;
 }
-/*
- * Novo Estilo para Botão de Destaque Invertido (Ghost Button)
- * Destaque (Accent): Ciano-Azul Marinho (#16799C)
- * Fundo Principal: Cinza Metálico Escuro (#121212)
- */
+
 .btn-inverse-highlight {
-    /* Cor de fundo é a mesma do body (mais escuro) */
     background-color: #121212;
-    /* Cor do texto é a cor de destaque */
     color: #16799C;
-    /* Adiciona uma borda na cor de destaque */
     border: 2px solid #16799C;
-    /* Transição suave no hover (opcional, mas recomendado para harmonia) */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Efeito de HOVER: Inverte as cores para chamar atenção */
 .btn-inverse-highlight:hover {
-    /* Fundo vira a cor de destaque */
     background-color: #16799C;
-    /* Texto vira a cor do fundo (ou uma cor clara para contraste) */
-    color: #E0E0E0; /* Usando o Cinza Claro Suave para leitura */
-    /* A borda continua na cor de destaque */
+    color: #E0E0E0; 
     border-color: #16799C;
 }
