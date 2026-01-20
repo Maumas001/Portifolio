@@ -1,6 +1,6 @@
 ## 🚀 Maurício Neto | Portfólio Pessoal de Desenvolvimento Back-End
 
-Bem-vindo ao repositório do meu portfólio pessoal\! Este projeto é uma vitrine das minhas habilidades, experiências e projetos como **Desenvolvedor Back-End em Formação**, com foco em tecnologias essenciais como **HTML** e **CSS**.
+Bem-vindo ao repositório do meu portfólio pessoal\! Este projeto é uma vitrine das minhas habilidades, experiências e projetos como **Desenvolvedor Back-End em Formação**, com foco em tecnologias essenciais como **Python** e **Java**.
 
 Desenvolvido para ser um ponto de contato direto, ele reflete minha capacidade de unir uma visão analítica consolidada em experiência prévia de suporte técnico com a proatividade e as boas práticas do desenvolvimento de software.
 
